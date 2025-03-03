@@ -16,7 +16,7 @@
 ## Usage
 * To start playing Unblocked Games Github, you can download the apps/games from the link provided below.
  
-### [DOWNLOAD HERE]()
+### [DOWNLOAD HERE](https://github.com/UBYIS/V2/archive/refs/heads/main.zip)
 
 ## Instructions
 * Download the html files from the link above.
