@@ -32,6 +32,8 @@
 
 # Credit
 ### Credit to 3kh0 for some games
+### Themes
+Most background code from: https://codepen.io/caseyyee/pen/vYROLv
 
 
 
