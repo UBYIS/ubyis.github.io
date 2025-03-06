@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284"
-crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284" crossorigin="anonymous"></script>
 <meta name="description" content="UBYIS Is a censorship free website with tons of games and apps including discord share with your classmates math work English and science ">
 <meta name="keywords" content="share with your classmates math work English and science goguardianbypass, securly-bypass Unblocked, Discord, Youtube, unblocker, ubg365, unblocked games 76, classroom 6x, unblocked games wtf, unblocked games, cookie clicker, school work, keyword, school fun, GitHub, coolmathgames, free download, apk, html, index.html, discord, youtube, videos, free, hacked, iframe, google snake, Minecraft, blockblast, block blast, Mario, smash carts, unblocked games free 76 classroom 6x google sites, google sites, google site, rammerhead, nettleweb, chromebook-hack">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284"
-crossorigin="anonymous"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284" crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-1598895964566284">
 <title>UBYIS</title>
 <link rel="icon" href="img/UBG.png" type="image/png">
@@ -18,14 +16,25 @@ color: #eee;
 font-family: Arial, sans-serif;
 overflow: auto; 
 }
-
+}
 canvas {
-background: #efefef;
-position: absolute;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: -1;
+}
+#gradient
+{
+width: 100%;
+height: 100%;
+padding: 0px;
+margin: 0px;
+position: fixed;
 top: 0;
 left: 0;
 z-index: -1;
-pointer-events: none;
 }
 body {
 color: #eee;
@@ -111,11 +120,7 @@ border-radius: 10px;
 .game-title {
 margin-top: 10px;
 font-size: 1rem;
-
-
 }
-
-
 #info-modal {
 position: fixed;
 top: 0;
@@ -206,33 +211,27 @@ padding: 20px;
 .settings-content label {
 display: block;
 margin-bottom: 5px; }
-
 .scroll-container {
 width: 100%;          
 height: 100%;        
      
-
 ::-webkit-scrollbar {
 width: 12px;
 }
-
 ::-webkit-scrollbar-track {
 background: #1a1a1a;
 }
-
 ::-webkit-scrollbar-thumb {
 background-color: #888;
 border-radius: 10px;
 border: 3px solid #1a1a1a;
 }
-
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <div class="scroll-container">
 <div class="content">
+ <div id="gradient"></div>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MBLDT481JN"></script>
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -241,8 +240,7 @@ gtag('js', new Date());
 gtag('config', 'G-MBLDT481JN');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PHTHC5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
+<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PHTHC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </head>
 <body>
 <audio id="startupSound" src="snd/partner_bg.mp3"></audio>
@@ -277,7 +275,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 <button class="close-btn" id="close-info">Close</button>
 <p>Open Music In New Tab <a href="snd/partner_bg.mp3">HERE</a></p>
-
 </div>
 </div>
 <div id="splash-container"></div>
@@ -293,7 +290,7 @@ if(audio.paused){ audio.play(); } else { audio.pause(); }
 offButton.addEventListener('click', function(){
 audio.pause();
 audio.currentTime = 0;
- });
+});
 volumeSlider.addEventListener('input', function(){
 audio.volume = volumeSlider.value / 100;
 });
@@ -332,9 +329,7 @@ var games = [
 { title: "Learn To Fly", link: "Gams/learntofly/index.html", icon: "Gams/learntofly/learntofly.png" },
 { title: "Rerto Bowl", link: "Gams/retro-bowl/index.html", icon: "Gams/retro-bowl/img/icon.jpg" },
 { title: "Subway Surfers", link: "Gams/subway-surfers/index.html", icon: "Gams/subway-surfers/img/FirstAvatar.png" },
-
 ];
-
 games.forEach(function(game){
 var card = document.createElement("div");
 card.className = "game-widget";
@@ -427,84 +422,48 @@ infoModal.style.display = "none";
 infoModal.addEventListener("click", function(e){
 if(e.target === infoModal){ infoModal.style.display = "none"; }
 });
-var gridY = 100, gridX = 100, gridYheight = 10, rad = 40;
-var scene = new THREE.Scene();
-var cam = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000);
-var renderer = new THREE.WebGLRenderer({antialias:true});
-renderer.setSize(window.innerWidth, window.innerHeight);
-document.body.appendChild(renderer.domElement);
-var shapes = [];
-function setup(){
-var step = (Math.PI * Math.PI) / gridX;
-var angle = Math.PI;
-for(var j = 0; j < gridY; j++){
-shapes[j] = [];
-for(var i = 0; i < gridX; i++){
-var x = rad * Math.sin(angle);
-var z = rad * Math.cos(angle);
-var y = j * gridYheight + gridYheight / gridX;
-var rot = (i * (360 / gridX)) * (Math.PI / 179);
-var geo = new THREE.PlaneGeometry(1, Math.PI);
-var mat = new THREE.MeshBasicMaterial({color:0xff0001});
-var shape = new THREE.Mesh(geo, mat);
-shape.material.side = THREE.BackSide;
-shape.position.set(x, y, z);
-shape.rotation.y = rot;
-scene.add(shape);
-shapes[j].push(shape);
-angle += step;
+var colors = new Array(
+  [62,35,255],
+  [60,255,60],
+  [255,35,98],
+  [45,175,230],
+  [255,0,255],
+  [255,128,0]);
+var step = 0;
+var colorIndices = [0,1,2,3];
+var gradientSpeed = 0.002;
+function updateGradient()
+{
+if ( $===undefined ) return;
+var c0_0 = colors[colorIndices[0]];
+var c0_1 = colors[colorIndices[1]];
+var c1_0 = colors[colorIndices[2]];
+var c1_1 = colors[colorIndices[3]];
+var istep = 1 - step;
+var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
+var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
+var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
+var color1 = "rgb("+r1+","+g1+","+b1+")";
+var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
+var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
+var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
+var color2 = "rgb("+r2+","+g2+","+b2+")";
+$('#gradient').css({
+   background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"
+}).css({
+    background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"
+});
+step += gradientSpeed;
+if ( step >= 1 )
+{
+step %= 1;
+colorIndices[0] = colorIndices[1];
+colorIndices[2] = colorIndices[3];
+colorIndices[1] = ( colorIndices[1] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
+colorIndices[3] = ( colorIndices[3] + Math.floor( 1 + Math.random() * (colors.length - 1))) % colors.length;
 }
 }
-}
-var p1 = 0, p3 = 0;
-var aSin = [];
-var as = Math.random(300) * 10;
-var fd = Math.random(300) * 10;
-var as1 = Math.random(200) * 50;
-var fd1 = Math.random(300) * 50;
-var ps = Math.random(200) * 20 - 10;
-var ps2 = Math.random(200) * 40 - 20;
-function setupPlasma(){
-var iCount = 512;
-while(iCount--){
-var rVal = (iCount * 0.0013125) * 0.05174532;
-aSin[iCount] = Math.sin(rVal) * 512;
-}
-drawPlasma();
-}
-function drawPlasma(){
-var t3 = p3, t4 = p3;
-for(var i = gridX - 1; i >= 0; i--){
-var t1 = p1 + 5, t2 = p1 + 3;
-t3 &= 511;
-t4 &= 511;
-for(var j = gridY - 1; j >= 0; j--){
-t1 &= 511;
-t2 &= 511;
-var xVal = aSin[t1] + aSin[t2] + aSin[t3] + aSin[t4];
-shapes[j][i].material.color.r = xVal / as / 205;
-shapes[j][i].material.color.g = xVal / fd / 255;
-shapes[j][i].material.color.b = xVal / ps / 255;
-t1 += 5;
-t2 += 3;
-}
-t4 += as1;
-t3 += fd1;
-}
-p1 += ps;
-p3 += ps2;
-}
-function render(){
-requestAnimationFrame(render);
-cam.rotation.y += 0.005;
-cam.rotation.z += 0.0002;
-drawPlasma();
-renderer.render(scene, cam);
-}
-cam.position.y = (gridY * gridYheight) / 6;
-setup();
-setupPlasma();
-render();
+setInterval(updateGradient,10);
 var style = document.createElement("style");
 style.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');";
 document.head.appendChild(style);
@@ -546,10 +505,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector('.scroll-container');
   container.scrollTop = container.scrollHeight;
 });
-
 </script>
 <script>
-
 document.addEventListener("DOMContentLoaded", function () {
 const container = document.querySelector('.scroll-container');
 container.scrollTop = container.scrollHeight;
@@ -561,6 +518,4 @@ container.scrollTop = container.scrollHeight;
 <!-->kry<-->
 </script>
 </body>
-</body>
 </html>
-
