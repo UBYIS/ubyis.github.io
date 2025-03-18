@@ -318,6 +318,45 @@ height: 300%;
 #info-btn:active {
 transform: scale(0.95);
 }
+#partner-btn {
+background: linear-gradient(45deg, #000000, #e63946);
+border: none;
+color: #fff;
+padding: 25px 50px;
+border-radius: 111px;
+cursor: pointer;
+overflow-x:hidden
+z-index: 11;
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s, box-shadow 0.3s;
+text-transform: uppercase;
+letter-spacing: 2px;
+position: relative;
+font-family: "Press Start 2P", serif;
+}
+#partner-btn::before {
+content: "";
+position: absolute;
+top: 50%;
+left: 50%;
+width: 0;
+height: 0;
+background: rgba(255, 255, 255, 0.3);
+border-radius: 100%;
+transform: translate(-50%, -50%);
+transition: width 0.4s ease-out, height 0.4s ease-out;
+}
+#partner-btn:hover {
+transform: scale(1.1);
+box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+#partner-btn:active::before {
+width: 300%;
+height: 300%;
+}
+#partner-btn:active {
+transform: scale(0.95);
+}
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 </style>
 <!-- Google tag (gtag.js) -->
@@ -339,6 +378,7 @@ transform: scale(0.95);
 <div class="button-container">
 <button id="info-btn">Settings&Music</button>
 <button id="games-btn">View All Games</button>
+<button id="partner-btn">Partnerships</button>
 </div>
 <div class="scroll-container">
 <div class="content">
@@ -606,6 +646,9 @@ document.addEventListener("mouseup", up);
 });
 document.getElementById('games-btn').addEventListener('click', function() {
 window.location.href = 'ALLG.html';
+});
+document.getElementById('partner-btn').addEventListener('click', function() {
+window.location.href = 'partners.html';
 });
 document.addEventListener("DOMContentLoaded", function () {
 const container = document.querySelector('.scroll-container');
