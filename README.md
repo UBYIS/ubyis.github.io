@@ -9,7 +9,7 @@
 
 # Unblocked Games Github 
 * Welcome to the Unblocked Games Github repository! Here you can access and enjoy a variety of games and apps in environments where sites are typically restricted.
-
+# New Website https://ubyis.top
 ## Repository Content
 * In this repository, you will find a downloadable Html file that provides access to unblocked games and apps.
 
@@ -27,7 +27,6 @@
 
 * To open something double clicking the index.html or the only .html file to run the software you want
 * ALL made/unblocked BY Kry
-
 
 
 # Credit
