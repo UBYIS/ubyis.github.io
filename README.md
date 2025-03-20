@@ -16,7 +16,7 @@
 ## Usage
 * To start playing Unblocked Games Github, you can download the apps/games from the link provided below.
  
-### [DOWNLOAD HERE](https://github.com/UBYIS/V2/archive/refs/heads/main.zip)
+### [DOWNLOAD HERE](https://github.com/UBYIS/ubyis.github.io/archive/refs/heads/main.zip)
 
 ## Instructions
 * Download the html files from the link above.
@@ -30,7 +30,8 @@
 
 
 # Credit
-### Credit to 3kh0 for some games
+### Credit to 3kh0 for most games (https://gitlab.com/furtivethomas/3kh0-assets)
+### Ben_Da_Builder aka owner of https://benrogo.net
 ### Themes
 Most background code from: https://codepen.io/caseyyee/pen/vYROLv
 
