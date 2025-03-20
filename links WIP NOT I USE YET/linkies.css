@@ -1,0 +1,82 @@
+:root {
+    --main-bg-color: #000000;
+    --secondary-bg-color: #070707;
+    --accent-color: #E526CB;
+    --text-color: #ffffff;
+    --online-color: #00ff00;
+    --unknown-color: #ffff00;
+    --offline-color: #ff0000;
+}
+
+body {
+    overflow-y: auto;
+}
+
+.linkey-online {
+    color: var(--online-color) !important;
+    text-shadow: 0 0 5px var(--online-color), 0 0 15px var(--accent-color);
+}
+
+.linkey-unknown {
+    color: var(--unknown-color) !important;
+    text-shadow: 0 0 5px var(--unknown-color), 0 0 15px var(--accent-color);
+}
+
+.linkey-offline {
+    color: var(--offline-color) !important;
+    text-shadow: 0 0 5px var(--offline-color), 0 0 15px var(--accent-color);
+}
+
+td a {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+}
+
+td a > span {
+    display: none;
+}
+
+.page-button-hidden {
+    visibility: hidden;
+}
+
+.help-icon {
+    color: var(--accent-color);
+    text-shadow: 0 0 8px var(--accent-color), 0 0 15px var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease;
+    padding: 0 3px;
+}
+
+.help-icon:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px var(--accent-color), 0 0 15px var(--accent-color);
+}
+
+.help-icon::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background-color: var(--accent-color);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.help-icon:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.exclude-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

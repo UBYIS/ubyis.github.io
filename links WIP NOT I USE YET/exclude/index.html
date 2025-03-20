@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Exclude a Site | Benrogo</title>
+    <meta name="title" content="Exclude a Site | Benrogo">
+    <meta name="description" content="Instructions to exclude a site from Benrogo">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://benrogo.net/">
+    <meta property="og:title" content="Exclude a Site | Benrogo">
+    <meta property="og:description" content="Instructions to exclude a site from Benrogo">
+    <meta property="og:image" content="/images/banner.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://benrogo.net/">
+    <meta property="twitter:title" content="Exclude a Site | Benrogo">
+    <meta property="twitter:description" content="Instructions to exclude a site from Benrogo">
+    <meta property="twitter:image" content="/images/banner.png">
+
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="exclude.css">
+    <link rel="icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+</head>
+<body>
+    <nav class="navbar">
+        <div>
+            <a class="nav-header" href="/"><img id="logo" src="/logo.png"> Benrogo.net</a>
+            <a class="nav-item" href="/linkies/">Linkies</a>
+            <a class="nav-item" href="/about/">About</a>
+            <a class="nav-item" href="/partners/">Partners</a>
+            <a class="nav-item" href="/disc">Discord</a>
+        </div>
+    </nav>
+
+    <div class="wrapper">
+        <div class="main-content">
+            <h1>Add these tags to the home page of your proxy site!</h1>
+            
+            <h2>benrogo:index tag</h2>
+            <div class="code-container">
+                <pre><code class="highlight">&lt;<span class="tag">meta</span> <span class="attr">property</span>=<span class="value">"benrogo:index"</span> <span class="attr">content</span>=<span class="value">"INDEX_STATUS"</span>&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <p>INDEX_STATUS can be either <code>index</code> or <code>noindex</code>. Setting it to <code>noindex</code> will prevent your site from being indexed on linkies. Default is <code>index</code> if the tag is not there. Useful for if you have a development site you don't want leaked!!</p>
+            
+            <h2>benrogo:uvpath tag</h2>
+            <div class="code-container">
+                <pre><code class="highlight">&lt;<span class="tag">meta</span> <span class="attr">property</span>=<span class="value">"benrogo:uvpath"</span> <span class="attr">content</span>=<span class="value">"PATH_TO_UV_CONFIG"</span>&gt;</code></pre>
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+            </div>
+            <p>PATH_TO_UV_CONFIG should be a relative path to your uv.config.js file, such as <code>/static/uv/uv.config.js</code>. This is not necessary but speeds up indexing. If not specified, Benrogo will scan several common paths for uv.config.js instead. If the file path given here returns a 404, your site <strong>will not be indexed</strong></p>
+            
+            <h2>Place these tags in your home page</h2>
+            <p>Add them somewhere between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> in your HTML.</p>
+            <h3>Example:</h3>
+            <div class="code-container">
+                <pre><code class="highlight">&lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">title</span>&gt;Super epic proxy site&lt;/<span class="tag">title</span>&gt;
+    &lt;<span class="tag">link</span> <span class="attr">rel</span>=<span class="value">"stylesheet</span>" <span class="attr">href</span>=<span class="value">"/index.css"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attr">property</span>=<span class="value">"benrogo:index"</span> <span class="attr">content</span>=<span class="value">"index"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="attr">property</span>=<span class="value">"benrogo:uvpath"</span> <span class="attr">content</span>=<span class="value">"/static/uv/uv.config.js"</span>&gt;
+&lt;/<span class="tag">head</span>&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-items">
+            <a href="/privacypolicy/">Privacy Policy</a>
+            <a href="/contact/">Contact Us</a>
+            <a href="/status/">Network Status</a>
+            <a href="/byod/">BYOD</a>
+            <a href="/donate/">Donate</a>
+            <a href="/credits/">Credits</a>
+        </div>
+        <p>Copyright &copy; 2025 Benrogo. All rights reserved.</p>
+    </footer>
+    <div id="particles-js"></div>
+    <script src="/js/particles.js"></script>
+    <script src="/js/app.js"></script>
+    <script src="/js/notification.js"></script>
+    <script src="/js/copy.js"></script>
+    <script src="expand.js"></script>
+    <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+</body>
+</html>

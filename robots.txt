@@ -1,0 +1,12 @@
+# robots.txt 
+# Keywords:
+# goguardianbypass, securly, Discord, ubg365, unblocked games 76, classroom 6x,
+# unblocked games wtf, unblocked games, cookie clicker, school work, keyword,
+# school fun, GitHub, coolmathgames, free download, apk, html, index.html,
+# discord, youtube, videos, free, hacked, iframe, google snake, Minecraft,
+# blockblast, block blast, Mario, smash carts, 76 classroom 6x, google sites,
+# google site, rammerhead, nettleweb, chromebook-hack, kingpin, aids, frogiee1
+User-agent: *
+Allow: /
+
+Sitemap: https://ubyis.top/sitemap.xml
