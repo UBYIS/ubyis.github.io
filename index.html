@@ -382,6 +382,19 @@ cursor: pointer;
 
 </head>
 <body>
+
+<input type="text" id="hiddenInput" style="position: absolute; opacity: 0; pointer-events: none;">
+<script>
+let inputBuffer = "";
+document.addEventListener("keydown", function(event) {
+inputBuffer += event.key.toLowerCase();
+if (inputBuffer.endsWith("void")) {
+setTimeout(() => {
+ window.location.href = "https://void.ubyis.top";
+}, 100);
+}
+});
+</script>
 <audio id="startupSound" src="snd/partner_bg.mp3"></audio>
 <header>
 </header>
