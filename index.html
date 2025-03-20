@@ -2,14 +2,20 @@
 <html lang="en">
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284" crossorigin="anonymous"></script>
-<meta name="description" content="UBYIS Is a censorship free website with tons of g a m e s and apps including d i s c o r d share with your classmates to learn math work English and science ">
-<meta name="keywords" content="share with your classmates math work English and science goguardianbypass, securly Discord, ubg365, unblocked games 76, classroom 6x, unblocked games wtf, unblocked games, cookie clicker, school work, keyword, school fun, GitHub, coolmathgames, free download, apk, html, index.html, discord, youtube, videos, free, hacked, iframe, google snake, Minecraft, blockblast, block blast, Mario, smash carts, unblocked games free 76 classroom 6x google sites, google sites, google site, rammerhead, nettleweb, chromebook-hack">
+<meta name="description" content="UBYIS (Unbore Yourself In School) Is a censorship free website with tons of g a m e s and apps including d i s c o r d share with your classmates to learn math work English and science ">
+<meta name="keywords" content=" unblocked games, goguardianbypass, securly Discord, ubg365, unblocked games 76, classroom 6x, unblocked games wtf, cookie clicker, school work, keyword, school fun, GitHub, coolmathgames, free download, apk, html, index.html, discord, youtube, videos, free, hacked, iframe, google snake, Minecraft, blockblast, block blast, Mario, smash carts, unblocked games free 76 classroom 6x google sites, google sites, google site, rammerhead, nettleweb, chromebook-hack">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1598895964566284" crossorigin="anonymous"></script>
 <meta name="google-adsense-account" content="ca-pub-1598895964566284">
 <title>UBYIS</title>
 <link rel="icon" href="img/UBG.png" type="image/png">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed">
+<div onselectstart="return false;" onmousedown="return false;">
 <style>
+* {
+    -webkit-user-select: none; /* btw i stole this code from google (sorry chat) */
+    -moz-user-select: none;               
+    -ms-user-select: none;     
+}
 html, body {
 margin: 0;
 padding: 0;
@@ -149,7 +155,7 @@ display: none;
 background: rgba(0, 0, 0, 0.5);
 justify-content: center;
 align-items: center;
-z-index: 11;
+z-index: 1001;
 }
 .modal-content {
 background: #222;
@@ -201,9 +207,7 @@ animation: shake 7s infinite;
 90% { transform: translate(-2px,2px); }
 100% { transform: translate(0,0); }
 }
-::selection {
-background-color: transparent;
-color: #000;
+
 overflow-x:hidden
 width: 100%;
 height: 100%;
@@ -287,7 +291,7 @@ padding: 25px 50px;
 border-radius: 111px;
 cursor: pointer;
 overflow-x:hidden
-z-index: 11;
+z-index: 1001;
 box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 transition: transform 0.3s, box-shadow 0.3s;
 text-transform: uppercase;
@@ -614,7 +618,23 @@ var style = document.createElement("style");
 style.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');";
 document.head.appendChild(style);
 var splashContainer = document.getElementById("splash-container");
-var splashes = ["Hello World", "paptata ewwww", "", "I hate pickle", "Vapor is cool", "Minecraft", "Check Info&Proxy", "unblockzone is skidded", "braybray is a skid", "proxy?", "skibkid420 on discord", "i ❤ notepad++", "Love you mom", "balatro ❤", "Void Network ❤", "I HAVE A BOMB", "GLS V3", "ERROR NO SPLASH TEXT", "KRY ❤", ":(", "coleman","all my homies hate unblockzone"];
+var splashes = ["UBYIS"];
+var text = splashes[Math.floor(Math.random() * splashes.length)];
+var d = document.createElement("div");
+d.className = "splash";
+d.style.fontFamily = "'Press Start 2P', cursive";
+d.textContent = text;
+splashContainer.appendChild(d);
+d.innerText = text;
+var partnerBtn = document.getElementById("info-btn");
+var rect = partnerBtn.getBoundingClientRect();
+//i need to fix this soon (to do add 35deg tilt add centering and )
+d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.5) + "px";
+d.style.top = (rect.top + rect.height / 1 - d.offsetHeight / 0.5) + "px";
+//d.style.right = (rect.right + rect.top / 2 - d.offsetWidth / 1.5) + "px"; 
+d.style.zIndex = "11";
+var splashContainer = document.getElementById("splash-container");
+var splashes = ["1.6.1"];
 var text = splashes[Math.floor(Math.random() * splashes.length)];
 var d = document.createElement("div");
 d.className = "splash";
@@ -625,10 +645,10 @@ d.innerText = text;
 var partnerBtn = document.getElementById("partner-btn");
 var rect = partnerBtn.getBoundingClientRect();
 //i need to fix this soon (to do add 35deg tilt add centering and )
-d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.5) + "px";
+d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.55) + "px";
 d.style.top = (rect.top + rect.height / 1 - d.offsetHeight / 0.5) + "px";
 //d.style.right = (rect.right + rect.top / 2 - d.offsetWidth / 1.5) + "px"; 
-d.style.zIndex = "13";
+d.style.zIndex = "11";
 splashContainer.appendChild(d);
 d.addEventListener("mousedown", function(e){
 d.style.cursor = "grabbing";
