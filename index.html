@@ -361,6 +361,12 @@ height: 80%;
 #partner-btn:active {
 transform: scale(0.95);
 }
+.about-us {
+position: fixed;
+bottom: 10px; 
+left: 50%;
+transform: translateX(-50%);
+cursor: pointer;
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 </style>
 <!-- Google tag (gtag.js) -->
@@ -402,10 +408,11 @@ transform: scale(0.95);
 <div class="modal-content">
 <p>Let me know about bugs or broken games</p>
 <h3>Links</h3>
-<p>Discord: <a href="https://discord.gg/TeCSpkvTAw">HERE</a></p>
-<p>Github: <a href="ubyis.github.io/">HERE</a></p>
+<p>Discord: <a href="https://discord.gg/TeCSpkvTAw">join the UBYIS discord server</a></p>
+<p>Github: <a href="ubyis.github.io/">go to the github version of this website</a></p>
 <h3>Pages</h3>
-<p>Partners: <a href="partners.html">HERE</a></p>
+<p>Partners: <a href="partners.html">Partners Tab</a></p>
+<p>Home Page <a href="index.html">Home Page</a></p>
 <h3>Music</h3>
 <div class="settings-content">
 <label for="play-btn">Play/Pause:</label>
@@ -416,13 +423,18 @@ transform: scale(0.95);
 <button id="off-btn">Stop</button>
 </div>
 <button class="close-btn" id="close-info">Close</button>
-<p>Open Music In New Tab <a href="snd/partner_bg.mp3">HERE</a></p>
+<p>Open Music In New Tab <a href="snd/partner_bg.mp3">play music here</a></p>
 
 
 </div>
 </div>
 <div id="splash-container"></div>
 <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
+  <a href="aboutUBYIS.html" class="about-us">
+    
+    <img src="img/aboutUs.png" alt="unblocked games about us ubyis">
+  </a>
 <script>
 document.addEventListener("DOMContentLoaded", function(){
 var audio = document.getElementById('startupSound');
