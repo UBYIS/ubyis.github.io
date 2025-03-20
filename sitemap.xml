@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
- goguardianbypass, securly, Discord, ubg365, unblocked games 76, classroom 6x,
+ ubyis, uyis, unbore yourself in school, goguardianbypass, securly, Discord, ubg365, unblocked games 76, classroom 6x,
   unblocked games wtf, unblocked games, cookie clicker, school work, keyword,
   school fun, GitHub, coolmathgames, free download, apk, html, index.html,
   discord, youtube, videos, free, hacked, iframe, google snake, Minecraft,
@@ -8,52 +8,62 @@
   google site, rammerhead, nettleweb, chromebook-hack
 -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+  <!-- homepage  -->
   <url>
     <loc>https://ubyis.top/</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
-  <!-- Individual pages optimized with keywords -->
+  <!-- homepage also  -->
   <url>
     <loc>https://ubyis.top/index.html</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+  <!-- all games -->
   <url>
-    <loc>https://ubyis.top/ALLG.html</loc>
+  <loc>https://ubyis.top/ALLG.html</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+  <!-- old home page -->
   <url>
     <loc>https://ubyis.top/g.html</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- ubyis partners -->
   <url>
     <loc>https://ubyis.top/partners</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- youtube -->
   <url>
     <loc>https://ubyis.top/BBypass/youtube.html>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- unblocked discord -->
   <url>
     <loc>https://ubyis.top/BBypass/Unblocked-Discord/Unblocked-Discord-V2/Unblocked-Discord.html>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- robots.txt -->
   <url>
     <loc>https://ubyis.top/robots.txt</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- sitemap.xml -->
   <url>
     <loc>https://ubyis.top/sitemap.xml</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- keywords ubyis unbore yourself in school -->
   <url>
     <loc>https://ubyis.top/keyword.txt</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- google ads -->
   <url>
     <loc>https://ubyis.top/ads.txt</loc>
     <lastmod>2025-03-20</lastmod>
   </url>
+    <!-- readme -->
   <url>
     <loc>https://ubyis.top/README.md</loc>
     <lastmod>2025-03-20</lastmod>

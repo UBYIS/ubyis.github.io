@@ -391,7 +391,7 @@ transform: scale(0.95);
 <div class="games-grid"></div>
 </main>
 <div id="widgetbot-container">
-<div class="drag-handle" id="drag-handle">Drag<span class="minimize-btn" onclick="minimizeWidget()">–</span></div>
+<div class="drag-handle" id="drag-handle">Discord<span class="minimize-btn" onclick="minimizeWidget()">–</span></div>
 <widgetbot server="1286367955378114601" channel="1297982806722351164"></widgetbot>
 <div id="resizer"></div>
 </div>
@@ -622,10 +622,13 @@ d.style.fontFamily = "'Press Start 2P', cursive";
 d.textContent = text;
 splashContainer.appendChild(d);
 d.innerText = text;
-var x = Math.random() * (window.innerWidth - 500);
-var y = window.innerHeight - 950 + Math.random() * 950;
-d.style.left = x + "px";
-d.style.top = y + "px";
+var partnerBtn = document.getElementById("partner-btn");
+var rect = partnerBtn.getBoundingClientRect();
+//i need to fix this soon (to do add 35deg tilt add centering and )
+d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.5) + "px";
+d.style.top = (rect.top + rect.height / 1 - d.offsetHeight / 0.5) + "px";
+//d.style.right = (rect.right + rect.top / 2 - d.offsetWidth / 1.5) + "px"; 
+d.style.zIndex = "13";
 splashContainer.appendChild(d);
 d.addEventListener("mousedown", function(e){
 d.style.cursor = "grabbing";
