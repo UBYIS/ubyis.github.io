@@ -277,8 +277,8 @@ transform: scale(1.1);
 box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 #games-btn:active::before {
-width: 300%;
-height: 300%;
+width: 80%; 
+height: 80%; 
 }
 #games-btn:active {
 transform: scale(0.95);
@@ -316,8 +316,8 @@ transform: scale(1.1);
 box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 #info-btn:active::before {
-width: 300%;
-height: 300%;
+width: 80%; 
+height: 80%; 
 }
 #info-btn:active {
 transform: scale(0.95);
@@ -355,8 +355,8 @@ transform: scale(1.1);
 box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
 }
 #partner-btn:active::before {
-width: 300%;
-height: 300%;
+width: 80%; 
+height: 80%; 
 }
 #partner-btn:active {
 transform: scale(0.95);
@@ -373,7 +373,7 @@ transform: scale(0.95);
   gtag('config', 'G-J8QHFT5Q6X');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PHTHC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+
 </head>
 <body>
 <audio id="startupSound" src="snd/partner_bg.mp3"></audio>
@@ -387,8 +387,6 @@ transform: scale(0.95);
 <div class="scroll-container">
 <div class="content">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PHTHC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </div>
 </div>
 <main>
@@ -614,58 +612,8 @@ cam.position.y = (gridY * gridYheight) / Math.PI;
 setup();
 setupPlasma();
 render();
-var style = document.createElement("style");
-style.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');";
-document.head.appendChild(style);
-var splashContainer = document.getElementById("splash-container");
-var splashes = ["UBYIS"];
-var text = splashes[Math.floor(Math.random() * splashes.length)];
-var d = document.createElement("div");
-d.className = "splash";
-d.style.fontFamily = "'Press Start 2P', cursive";
-d.textContent = text;
-splashContainer.appendChild(d);
-d.innerText = text;
-var partnerBtn = document.getElementById("info-btn");
-var rect = partnerBtn.getBoundingClientRect();
-//i need to fix this soon (to do add 35deg tilt add centering and )
-d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.5) + "px";
-d.style.top = (rect.top + rect.height / 1 - d.offsetHeight / 0.5) + "px";
-//d.style.right = (rect.right + rect.top / 2 - d.offsetWidth / 1.5) + "px"; 
-d.style.zIndex = "11";
-var splashContainer = document.getElementById("splash-container");
-var splashes = ["1.6.1"];
-var text = splashes[Math.floor(Math.random() * splashes.length)];
-var d = document.createElement("div");
-d.className = "splash";
-d.style.fontFamily = "'Press Start 2P', cursive";
-d.textContent = text;
-splashContainer.appendChild(d);
-d.innerText = text;
-var partnerBtn = document.getElementById("partner-btn");
-var rect = partnerBtn.getBoundingClientRect();
-//i need to fix this soon (to do add 35deg tilt add centering and )
-d.style.left = (rect.left + rect.width / 1 - d.offsetWidth / 0.55) + "px";
-d.style.top = (rect.top + rect.height / 1 - d.offsetHeight / 0.5) + "px";
-//d.style.right = (rect.right + rect.top / 2 - d.offsetWidth / 1.5) + "px"; 
-d.style.zIndex = "11";
-splashContainer.appendChild(d);
-d.addEventListener("mousedown", function(e){
-d.style.cursor = "grabbing";
-var ox = e.clientX - d.offsetLeft;
-var oy = e.clientY - d.offsetTop;
-function move(e){
-d.style.left = (e.clientX - ox) + "px";
-d.style.top = (e.clientY - oy) + "px";
-}
-function up(){
-document.removeEventListener("mousemove", move);
-document.removeEventListener("mouseup", up);
-d.style.cursor = "grab";
-}
-document.addEventListener("mousemove", move);
-document.addEventListener("mouseup", up);
-});
+
+
 });
 document.getElementById('games-btn').addEventListener('click', function() {
 window.location.href = 'ALLG.html';
@@ -677,6 +625,24 @@ document.addEventListener("DOMContentLoaded", function () {
 const container = document.querySelector('.scroll-container');
 container.scrollTop = container.scrollHeight;
 });
+var s = document.createElement("style");
+s.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');";
+document.head.appendChild(s);
+function createSplash(btnId, text, leftDivisor) {
+var c = document.getElementById("splash-container");
+var d = document.createElement("div");
+d.className = "splash";
+d.style.fontFamily = "'Press Start 2P', cursive";
+d.textContent = text;
+c.appendChild(d);
+var b = document.getElementById(btnId);
+var r = b.getBoundingClientRect();
+d.style.left = (r.left + r.width - d.offsetWidth / leftDivisor) + "px";
+d.style.top = (r.top + r.height - d.offsetHeight / 0.5) + "px";
+d.style.zIndex = "11";
+}
+createSplash("info-btn", "UBYIS", 0.5);
+createSplash("partner-btn", "1.6.1", 0.55);
 </script>
 <script>
 <!-->hi skid<-->
