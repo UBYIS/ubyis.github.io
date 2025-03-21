@@ -77,7 +77,7 @@ background: #000;
 display: flex;
 flex-direction: column;
 transition: opacity 0.3s, transform 0.3s;
-z-index: 10;
+z-index: 12;
 
 }
 .drag-handle {
@@ -88,13 +88,13 @@ cursor: move;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 0.5em;
+padding: 0 1.5em;
 color: #fff;
 font-weight: bold;
 box-sizing: border-box;
 flex-shrink: 0;
 overflow-x:hidden
-z-index: 10;
+z-index: 14;
 }
 .minimize-btn {
 cursor: pointer;
@@ -104,7 +104,7 @@ padding: 0.25em 0.5em;
 border-radius: 0.25em;
 font-size: 1em;
 flex-shrink: 0;
-z-index: 10;
+z-index: 12;
 
 }
 widgetbot {
@@ -112,7 +112,7 @@ display: block;
 flex-grow: 1;
 width: 100%;
 height: calc(100% - 2em);
-z-index: 10;
+z-index: 13;
 
 }
 #resizer {
@@ -123,8 +123,17 @@ cursor: se-resize;
 position: absolute;
 bottom: 0;
 right: 0;
-z-index: 10;
+z-index: 14;
 overflow-x:hidden
+}
+/* .resizer::before {
+content: '⇔'; 
+font-size: 20px;
+color: #333;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%); */
 }
 #reopen-widget {
 position: fixed;
@@ -415,6 +424,7 @@ window.location.href = "https://void.ubyis.top";
 </main>
 <div id="widgetbot-container">
 <div class="drag-handle" id="drag-handle">Discord<span class="minimize-btn" onclick="minimizeWidget()">–</span></div>
+
 <widgetbot server="1286367955378114601" channel="1297982806722351164"></widgetbot>
 <div id="resizer"></div>
 </div>
@@ -679,6 +689,6 @@ console.log("coded by kry formated by ai like technonyte (/hj)");
 </body>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9G0BWC15P1"></script>
 <script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
-
+<div class="resizer"></div>
 </body>
 </html>
