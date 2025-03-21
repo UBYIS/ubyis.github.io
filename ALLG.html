@@ -6,60 +6,41 @@
 <meta name="google-adsense-account" content="ca-pub-1598895964566284">
 <title>UBYIS</title>
 <link rel="icon" href="img/logo.png" type="image/png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 <style>
-html,
 body {
-  color: #eee;
+
+  overflow-x hidden;
+background: linear-gradient(90deg, 
+ 
+  
+  rgba(0, 0, 0, 0.95) 25%,
+  rgba(0, 0, 0, 0.94) 30%,
+  rgba(0, 0, 0, 0.93) 35%,
+  rgba(0, 0, 0, 0.92) 40%,
+  rgba(0, 0, 0, 0.91) 45%,
+  rgba(0, 0, 0, 0.90) 50%, 
+  rgba(0, 0, 0, 0.89) 55%, 
+  rgba(0, 0, 0, 0.88) 60%, 
+  rgba(0, 0, 0, 0.87) 65%, 
+  rgba(0, 0, 0, 0.86) 70%, 
+  rgba(0, 0, 0, 0.85) 75%, 
+  rgba(0, 0, 0, 0.84) 80%, 
+  rgba(0, 0, 0, 0.83) 85%, 
+  rgba(0, 0, 0, 0.82) 90%,
+  rgba(0, 0, 0, 0.81) 95%,   
+  rgba(0, 0, 0, 0.80) 100%);
+  height: 99%;
+  width: 99%;
+
+}
+html {
+color: #eee;
   font-family: Arial, sans-serif;
-  overflow: auto;
-}
-canvas {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-#gradient {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-body {
-  color: #eee;
-  font-family: Arial, sans-serif;
-  overflow-x: hidden;
-}
-header {
-  background: #222;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 2px solid #444;
-  position: relative;
-  overflow-x: hidden;
-}
-header h1 {
-  margin: 0;
-  font-size: 2rem;
-  transition: transform 0.2s;
-  overflow-x: hidden;
-}
-header h1:hover {
-  transform: scale(1.05);
-}
-header h1:hover {
-  transform: scale(1.05);
-  opacity: 1 !important;
-}
+  font-weight: bold;
+  }
 #info-btn {
-  background: linear-gradient(45deg, #000000, #e63946);
+  background: linear-gradient(45deg, #000000, #4d324d);
   border: none;
   color: #fff;
   padding: 25px 50px;
@@ -105,8 +86,8 @@ header h1:hover {
   width: 50%;
   border: none;
   border-radius: 25px;
-  background: linear-gradient(46deg, #e63946, #000);
-  color: #fff;
+  background: linear-gradient(46deg, #4d324d, #000);
+  color: black;
   font-size: 1rem;
   outline: none;
 }
@@ -117,23 +98,23 @@ header h1:hover {
   padding: 20px;
   position: relative;
   z-index: 1;
-  top: 1px;
+  top: 0px;
 }
 .games-grid:has(.game-widget:hover) .game-widget:not(:hover) {
-  transform: scale(0.95);
+  transform: scale(0.94);
 }
 .game-widget {
   background: #1a1a1a;
   padding: 10px;
-  border: 1px solid #333;
-  transition: transform 0.2s;
+  border: 4px solid #482e49;
+transition: transform 0.2s;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   cursor: pointer;
   border-radius: 10px;
-  overflow-x: hidden;
+ 
 }
 .game-widget:hover {
   transform: scale(1.05);
@@ -185,71 +166,7 @@ header h1:hover {
   padding: 5px 10px;
   border-radius: 4px;
   margin-top: 10px;
-}
-#proxy-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  background: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
-}
-.splash {
-  font-size: 45px;
-  font-family: "Press Start 2P", serif;
-  color: #ffde00;
-  position: absolute;
-  white-space: nowrap;
-  cursor: grab;
-  animation: shake 7s infinite;
-}
-#splash-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-@keyframes shake {
-  0% {
-    transform: translate(0, 0);
-  }
-  10% {
-    transform: translate(-2px, 2px);
-  }
-  20% {
-    transform: translate(2px, -2px);
-  }
-  30% {
-    transform: translate(-2px, 2px);
-  }
-  40% {
-    transform: translate(2px, -2px);
-  }
-  50% {
-    transform: translate(-2px, 2px);
-  }
-  60% {
-    transform: translate(2px, -2px);
-  }
-  70% {
-    transform: translate(-2px, 2px);
-  }
-  80% {
-    transform: translate(2px, -2px);
-  }
-  90% {
-    transform: translate(-2px, 2px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
-::selection {
-  background-color: transparent;
-  color: #000;
+
 }
 #volume-control {
   margin: 10px;
@@ -271,16 +188,13 @@ header h1:hover {
 .settings-content label {
   display: block;
   margin-bottom: 5px;
-}
-.scroll-container {
-  width: 100%;
-  height: 100%;
+
 }
 ::-webkit-scrollbar {
   width: 12px;
 }
 ::-webkit-scrollbar-track {
-  background: #1a1a1a;
+  background: #482e49;
 }
 ::-webkit-scrollbar-thumb {
   background-color: #888;
@@ -288,7 +202,7 @@ header h1:hover {
   border: 3px solid #1a1a1a;
 }
 #home-btn {
-  background: linear-gradient(45deg, #000000, #e63946);
+  background: linear-gradient(45deg, #000000, #4d324d);
   border: none;
   color: #fff;
   padding: 25px 50px;
@@ -332,11 +246,10 @@ header h1:hover {
 
 </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<div class="scroll-container">
 <div class="content">
 <input type="text" id="search" placeholder="Search games...">
 <div class="games-grid"></div>
-<div id="gradient"></div>
+<div class="scroll-container">
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8QHFT5Q6X"></script>
 <script>
@@ -346,13 +259,13 @@ gtag('js',new Date());
 gtag('config','G-J8QHFT5Q6X');
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W4PHTHC5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+
 </head>
 <body>
 <audio id="startupSound" src="snd/partner_bg.mp3"></audio>
 <button id="info-btn">Settings&Music</button>
 <button id="home-btn" onclick="location.href='index.html';">Go To HomePage</button
-<main></main>
+
 <div id="widgetbot-container">
 <div class="drag-handle" id="drag-handle"><span class="minimize-btn"></span>
 <div id="resizer"></div>
@@ -463,7 +376,7 @@ document.addEventListener("DOMContentLoaded", function() {
 	}, {
 		title: "Discord",
 		link: "BBypass/Unblocked-Discord/Unblocked-Discord-V2.0/Unblocked-Discord.html",
-		icon: "img/UBG.png"
+		icon: "img/discord.png"
 	}, {
 		title: "Wordle",
 		link: "Gams/Wordle/index.html",
@@ -536,6 +449,67 @@ document.addEventListener("DOMContentLoaded", function() {
 		title: "Youtube",
 		link: "BBypass/youtube.html",
 		icon: "img/youtube.png"
+    },
+		 {
+		title: "Papery Planes",
+		link: "Gams/papery-planes/index.html",
+		icon: "Gams/papery-planes/splash.jpg"
+	}, {
+		title: "Pico-8 Doom",
+		link: "Gams/poom/index.html",
+		icon: "img/poom.png"
+	}, {
+		title: "DOOMORI",
+		link: "Gams/doomori/index.html",
+		icon: "Gams/doomori/splash.png"
+	}, {
+		title: "Doom",
+		link: "Gams/doom/doom.html",
+		icon: "Gams/doom/ico.png"
+	}, {
+		title: "Dumb Ways To Die {Scratch}",
+		link: "Gams/dumbwaystodie/dumbwaystodie.html",
+		icon: "Gams/dumbwaystodie/ico.webp"
+	}, {
+		title: "Earn To Die",
+		link: "Gams/earntodie/index.html",
+		icon: "Gams/earntodie/ico.png"
+	}, {
+		title: "Flappy Bird",
+		link: "Gams/flappy-bird/index.html",
+		icon: "Gams/flappy-bird/assets/thumb.png"
+	}, {
+		title: "Vex7",
+		link: "Gams/vex7/index.html",
+		icon: "Gams/vex7/assets/icon.png"
+		}, {
+		title: "Vex6",
+		link: "Gams/vex6/index.html",
+		icon: "Gams/vex6/assets/icon.jpeg"
+	}, {
+		title: "Vex5",
+		link: "Gams/vex5/index.html",
+		icon: "Gams/vex5/vex.jpeg"	
+    }, {
+		title: "Vex4",
+		link: "Gams/vex4/index.html",
+		icon: "Gams/vex4/vex4.png"
+	}, {
+		title: "Vex3",
+		link: "Gams/vex3/index.html",
+		icon: "Gams/vex3/vex3.png"	
+	}, {
+		title: "Vex2",
+		link: "Gams/vex2/vex2.html",
+		icon: "Gams/vex2/BC5ADE2D-5F7A-4352-A7FD-579517F823E4.jpeg"
+	}, {
+		title: "Tiny Fishing",
+		link: "Gams/tiny-fishing/index.html",
+		icon: "Gams/tiny-fishing/tiny-fishing.png"
+	}, {
+		title: "WebGl Fluid Sim",
+		link: "Gams/webgl-fluid-simulation/index.html",
+		icon: "Gams/webgl-fluid-simulation/promo_back.png"
 	}];
 	games.forEach(function(game) {
 		var card = document.createElement("div");
@@ -616,23 +590,8 @@ document.addEventListener("DOMContentLoaded", function() {
 	reopenWidgetBtn.ondragstart = function() {
 		return false;
 	};
-	var resizer = document.getElementById("resizer");
-	resizer.addEventListener("mousedown", function(e) {
-		e.preventDefault();
-
-		function Resize(e) {
-			var containerRect = widgetContainer.getBoundingClientRect();
-			widgetContainer.style.width = (e.clientX - containerRect.left) + "px";
-			widgetContainer.style.height = (e.clientY - containerRect.top) + "px";
-		}
-
-		function stopResize() {
-			window.removeEventListener("mousemove", Resize);
-			window.removeEventListener("mouseup", stopResize);
-		}
-		window.addEventListener("mousemove", Resize);
-		window.addEventListener("mouseup", stopResize);
-	});
+	
+	
 	var infoBtn = document.getElementById("info-btn");
 	var infoModal = document.getElementById("info-modal");
 	var closeInfo = document.getElementById("close-info");
@@ -646,95 +605,21 @@ document.addEventListener("DOMContentLoaded", function() {
 		if (e.target === infoModal) {
 			infoModal.style.display = "none";
 		}
+	
+	
+	
+
 	});
-	var colors = new Array([62, 35, 255], [60, 255, 60], [255, 35, 98], [45, 175, 230], [255, 0, 255], [255, 128, 0]);
-	var step = 0;
-	var colorIndices = [0, 1, 2, 3];
-	var gradientSpeed = 0.002;
 
-	function updateGradient() {
-		if ($ === undefined) return;
-		var c0_0 = colors[colorIndices[0]];
-		var c0_1 = colors[colorIndices[1]];
-		var c1_0 = colors[colorIndices[2]];
-		var c1_1 = colors[colorIndices[3]];
-		var istep = 1 - step;
-		var r1 = Math.round(istep * c0_0[0] + step * c0_1[0]);
-		var g1 = Math.round(istep * c0_0[1] + step * c0_1[1]);
-		var b1 = Math.round(istep * c0_0[2] + step * c0_1[2]);
-		var color1 = "rgb(" + r1 + "," + g1 + "," + b1 + ")";
-		var r2 = Math.round(istep * c1_0[0] + step * c1_1[0]);
-		var g2 = Math.round(istep * c1_0[1] + step * c1_1[1]);
-		var b2 = Math.round(istep * c1_0[2] + step * c1_1[2]);
-		var color2 = "rgb(" + r2 + "," + g2 + "," + b2 + ")";
-		$('#gradient').css({
-			background: "-webkit-gradient(linear, left top, right top, from(" + color1 + "), to(" + color2 + "))"
-		}).css({
-			background: "-moz-linear-gradient(left, " + color1 + " 0%, " + color2 + " 100%)"
-		});
-		step += gradientSpeed;
-		if (step >= 1) {
-			step %= 1;
-			colorIndices[0] = colorIndices[1];
-			colorIndices[2] = colorIndices[3];
-			colorIndices[1] = (colorIndices[1] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-			colorIndices[3] = (colorIndices[3] + Math.floor(1 + Math.random() * (colors.length - 1))) % colors.length;
-		}
-	}
-	setInterval(updateGradient, 10);
-	var style = document.createElement("style");
-	style.innerHTML = "@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');";
-	document.head.appendChild(style);
-	var splashContainer = document.getElementById("splash-container");
-	var splashes = ["Hello World", "paptata ewwww", "", "I hate pickle", "Vapor is cool", "Minecraft", "Check Info&Proxy", "unblockzone is skidded", "braybray is a skid", "proxy?", "skibkid420 on discord", "i ❤ notepad++", "Love you mom", "balatro ❤", "Void Network ❤", "I HAVE A BOMB", "GLS V3", "ERROR NO SPLASH TEXT", "KRY ❤", ":(", "coleman", "all my homies hate unblockzone"];
-	var text = splashes[Math.floor(Math.random() * splashes.length)];
-	var d = document.createElement("div");
-	d.className = "splash";
-	d.style.fontFamily = "'Press Start 2P', cursive";
-	d.textContent = text;
-	splashContainer.appendChild(d);
-	d.innerText = text;
-	var x = Math.random() * (window.innerWidth - 500);
-	var y = window.innerHeight - 950 + Math.random() * 950;
-	d.style.left = x + "px";
-	d.style.top = y + "px";
-	splashContainer.appendChild(d);
-	d.addEventListener("mousedown", function(e) {
-		d.style.cursor = "grabbing";
-		var ox = e.clientX - d.offsetLeft;
-		var oy = e.clientY - d.offsetTop;
 
-		function move(e) {
-			d.style.left = (e.clientX - ox) + "px";
-			d.style.top = (e.clientY - oy) + "px";
-		}
-
-		function up() {
-			document.removeEventListener("mousemove", move);
-			document.removeEventListener("mouseup", up);
-			d.style.cursor = "grab";
-		}
-		document.addEventListener("mousemove", move);
-		document.addEventListener("mouseup", up);
-	});
-});
-document.getElementById("games-btn").addEventListener("click", function() {
-	window.location.href = "ALLG.html";
 });
 document.addEventListener("DOMContentLoaded", function() {
 	const container = document.querySelector(".scroll-container");
 	container.scrollTop = container.scrollHeight;
+	
 }); 
 </script>
-<script>
-	document.addEventListener("DOMContentLoaded", function() {
-		const container = document.querySelector(".scroll-container");
-		container.scrollTop = container.scrollHeight;
-	}); 
-</script>
-<script src="//instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
+<script src="https://instant.page/5.2.0" type="module" integrity="sha384-jnZyxPjiipYXnSU0ygqeac2q7CVYMbh84q0uHVRRxEtvFPiQYbXWUorga2aqZJ0z"></script>
 
-<script>
-</script>
 </body>
 </html>
