@@ -10,30 +10,23 @@
 # Unblocked Games Github 
 * Welcome to the Unblocked Games Github repository! Here you can access and enjoy a variety of games and apps in environments where sites are typically restricted.
 # New Website https://ubyis.top
-## Repository Content
-* In this repository, you will find a downloadable Html file that provides access to unblocked games and apps.
+
 
 ## Usage
-* To start playing Unblocked Games Github, you can download the apps/games from the link provided below.
+* To start playing Unblocked Games Github, you can download the apps/games from the link provided below or go to one of the websites.
  
 ### [DOWNLOAD HERE](https://github.com/UBYIS/ubyis.github.io/archive/refs/heads/main.zip)
 
-## Instructions
-* Download the html files from the link above.
-* Launch the app/game on your computer.
-* Star And Fork This repository
-* Share to your friends
-### Further Information
-
-* To open something double clicking the index.html or the only .html file to run the software you want
-* ALL made/unblocked BY Kry
-
 
 # Credit
-### Credit to 3kh0 for most games (https://gitlab.com/furtivethomas/3kh0-assets)
+## Credit to 3kh0 for most games (https://gitlab.com/furtivethomas/3kh0-assets)
+### codebeautify https://codebeautify.org/
 ### Ben_Da_Builder aka owner of https://benrogo.net
+
 ### Themes
 Most background code from: https://codepen.io/caseyyee/pen/vYROLv
+or just https://codepen.io in gen
+(i am bad at css)
 
 
 
