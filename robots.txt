@@ -1,6 +1,6 @@
 # ERROR {TOP 1 SEARCH}
 # ERROR 200 (HUH)
-# ERROR UNBLOCKED GAMES HERE GO TO HTTPS://UBYIS.TOP FOR UNBLOCKED GAMES FOR SCHOOL
+# ERROR UNBLOCKED GAMES HERE GO TO HTTPS://ubyis.org FOR UNBLOCKED GAMES FOR SCHOOL
 # ERROR VAPOR IS COOL
 # Keywords: ubyis, uyis, unbore yourself in school, goguardianbypass, securly, Discord, ubg365, unblocked games 76, classroom 6x,
 # ubyis, uyis, unbore yourself in school, goguardianbypass, securly, Discord, ubg365, unblocked games 76, classroom 6x,
@@ -12,4 +12,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ubyis.top/sitemap.xml
+Sitemap: https://ubyis.org/sitemap.xml
